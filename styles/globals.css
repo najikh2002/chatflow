@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Merriweather:wght@700&family=Source+Sans+3:wght@600&family=Source+Serif+4:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+.font-merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+.font-sans-3 {
+    font-family: 'Source Sans 3';
+}
+
+.font-serif-4 {
+    font-family: 'Source Serif 4';
+}
+
+.font-DMSans {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.hero-bg {
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(45deg, #d2001a,#7462ff,#25d3ab,#f48e21,#f48e21);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+  
+    filter: blur();
+  }
+
+  .experience-bg {
+    background: conic-gradient(from 180deg at 69.58% 44.09%, #F5AC76 0deg, #FECB7F 360deg);
+  }
+
+  .bg-price-card-0 {
+    background-color: #4635F3;
+  }
+
+  .bg-price-card-1 {
+    background-color: #F5AC76;
+  }
+
+  .bg-price-card-2 {
+    background-color: #FF5391;
+  }
+  
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
